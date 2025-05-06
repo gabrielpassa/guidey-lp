@@ -1,0 +1,58 @@
+.button-body {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    gap: 16px;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Variação 1: Botão Preto com Texto Branco */
+.button-body.black-button {
+    color: #fff;
+    background: #111;
+}
+
+.button-body.black-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.button-body.black-button svg {
+    transition: transform 0.3s ease;
+}
+
+.button-body.black-button:hover svg {
+    transform: translateX(6px);
+}
+
+/* Variação 2: Botão Branco com Texto Preto */
+.button-body.white-button {
+    color: #111;
+    background: #fff;
+}
+
+.button-body.white-button:hover {
+    background-color: #f1f1f1;
+    color: #111;
+}
+
+.button-body.white-button svg {
+    transition: transform 0.3s ease;
+}
+
+.button-body.white-button:hover svg {
+    transform: translateX(6px);
+}
