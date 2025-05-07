@@ -155,11 +155,12 @@ background: lightgray -1.016px 0.485px / 100% 128.084% no-repeat;
 .hero-gradient-mask {
     top: 280px;
     filter: blur(20px);
-    -webkit-filter: blur(44px),
+    -webkit-filter: blur(44px);
 }
 
 .hero-gradient-noise {
     top: 280px;
+    
 }
 
 

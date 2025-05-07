@@ -66,6 +66,7 @@
 
   * {
     font-family: 'Inter', sans-serif;
+    
    
 }
 
@@ -81,6 +82,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: center; /* centraliza horizontalmente */
+  overflow-x: hidden;
 }
 
 /* Container que limita a largura do conteúdo */

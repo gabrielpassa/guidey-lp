@@ -435,7 +435,7 @@ function Hero() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY
-      const newScale = 0.8 + scrollY / 1000
+      const newScale = 0.8 + scrollY / 100
       setScale(Math.min(newScale, 1))
     }
 
@@ -608,6 +608,7 @@ function Hero() {
               className="hero-video"
               aria-label="Vídeo demonstração: Onboarding Guiado e Suporte Guiado Guidey"
               loading="lazy"
+              preload='auto'
               autoPlay
               muted
               playsInline
@@ -616,6 +617,7 @@ function Hero() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
+            
             />
           </AnimatePresence>
         </div>
