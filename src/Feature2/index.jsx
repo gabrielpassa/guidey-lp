@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect} from 'react'
 import ButtonComponent from '../assets/Button'
 
 import { IconLifebuoyFilled } from '@tabler/icons-react';
@@ -8,11 +8,26 @@ import { IconLifebuoyFilled } from '@tabler/icons-react';
 
 function Feature2() {
 
+
+
   
+    const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+      const checkScreen = () => {
+        const match = window.matchMedia('(max-width: 1024px)')
+        setIsMobile(match.matches)
+      }
+  
+      checkScreen()
+  
+      window.addEventListener('resize', checkScreen)
+      return () => window.removeEventListener('resize', checkScreen)
+    }, [])
+
  
 
   return (
-    <div className='Feature1-container'>
+    <div style={!!isMobile ? {flexDirection: 'column-reverse'   } : null} className='Feature1-container'>
 
       <img loading='lazy' alt='Suporte proativo com guias dinâmicos inteligentes' src='/feature2.jpg' className='Feature1-image'></img>
       
@@ -52,10 +67,10 @@ function Feature2() {
         Suporte proativo com guias inteligentes
         </h3>
         <h4 className='Feature1-subheadline'>
-        Ofereça suporte autônomo com guias interativos, mantendo seus usuários no caminho certo e livres de frustrações
+        Ofereça suporte autônomo com guias interativos que mantêm seus usuários no fluxo certo, sem confusão, sem frustrações.
         </h4>
 
-        <ButtonComponent Color={'black-button'} Text={"Pré-registro"}/>
+        {/* <ButtonComponent Color={'black-button'} Text={"Pré-registro"}/> */}
       </div>
 
 

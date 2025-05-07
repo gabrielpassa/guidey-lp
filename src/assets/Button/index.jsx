@@ -20,7 +20,9 @@ useEffect(() => {
 
 
   return (
-    <div style={!!isFull && !!isMobile ? {width:'100%'} : null} className={`button-body ${Color}`}>
+    <div style={!!isFull && !!isMobile ? {width:'100%'} : null} className={`button-body ${Color}`}
+   data-tally-open="m69xP5" data-tally-width="420" data-tally-overlay="1" data-tally-emoji-text="👋" data-tally-emoji-animation="wave"
+    >
       <p>{text}</p>
       <IconArrowRight size={24} stroke={2} />
     </div>

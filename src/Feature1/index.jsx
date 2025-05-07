@@ -53,7 +53,7 @@ function Feature1() {
           Experiência interativa que guia os usuários por cada etapa do processo, oferecendo facilidade, agilidade e total clareza.
         </h4>
 
-        <ButtonComponent Color={'black-button'} Text={"Pré-registro"}/>
+        {/* <ButtonComponent Color={'black-button'} Text={"Pré-registro"}/> */}
       </div>
 
 

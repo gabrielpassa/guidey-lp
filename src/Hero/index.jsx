@@ -435,7 +435,7 @@ function Hero() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY
-      const newScale = 0.8 + scrollY / 100
+      const newScale = 0.8 + scrollY / 500
       setScale(Math.min(newScale, 1))
     }
 
@@ -548,7 +548,8 @@ function Hero() {
           />
         </div>
 
-        <ButtonComponent FullWidth={true} Color={'black-button'} Text={'Pré-registro'} />
+        <ButtonComponent FullWidth={true} Color={'black-button'} Text={'Garanta seu acesso'} />
+        
 
         <div
           className="hero-videos-body"
@@ -566,7 +567,7 @@ function Hero() {
                 height: '100%',
                 borderRadius: '12px',
                 zIndex: 0,
-                backgroundColor: '#030303'
+                backgroundColor: '#fff'
               }}
               initial={{ left: `${(switchOption - 1) * 50}%`, opacity: 0 }}
               animate={{ left: `${(switchOption - 1) * 50}%`, opacity: 1 }}
@@ -581,9 +582,9 @@ function Hero() {
               transition={{ type: 'spring', stiffness: 400, damping: 25, mass: 0.5 }}
             >
               {switchOption === 1 ? (
-                <IconPointerFilled className="hero-videos-switch-icon" stroke={1.5} style={{ color: '#F3F3F3' }} />
+                <IconPointerFilled className="hero-videos-switch-icon" stroke={1.5} style={{ color: '#111111' }} />
               ) : (
-                <IconPointer className="hero-videos-switch-icon" stroke={1.5} style={{ color: '#3E3E3E' }} />
+                <IconPointer className="hero-videos-switch-icon" stroke={1.5} style={{ color: '#111111' }} />
               )}
             </motion.div>
 
@@ -594,9 +595,9 @@ function Hero() {
               transition={{ type: 'spring', stiffness: 400, damping: 25, mass: 0.5 }}
             >
               {switchOption === 2 ? (
-                <IconLifebuoyFilled className="hero-videos-switch-icon" stroke={1.5} style={{ color: '#F3F3F3' }} />
+                <IconLifebuoyFilled className="hero-videos-switch-icon" stroke={1.5} style={{ color: '#111111' }} />
               ) : (
-                <IconLifebuoy className="hero-videos-switch-icon" stroke={1.5} style={{ color: '#3E3E3E' }} />
+                <IconLifebuoy className="hero-videos-switch-icon" stroke={1.5} style={{ color: '#111111' }} />
               )}
             </motion.div>
           </div>
