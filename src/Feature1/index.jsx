@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import ButtonComponent from '../assets/Button'
 
 import { IconPointerFilled } from '@tabler/icons-react';
@@ -8,6 +8,14 @@ import './index.css'
 
 function Feature1() {
 
+
+  useEffect(() => {
+    const video = document.querySelector('.Feature1-image');
+    if (video) {
+      video.play().catch((e) => console.log('Erro ao iniciar vídeo:', e));
+    }
+  }, []);
+  
   
  
 
@@ -59,7 +67,7 @@ function Feature1() {
 
 
 
-      <video loading='lazy' autoPlay loop alt=' Onboarding guiado que ensina enquanto faz' src='/feature1.mp4' className='Feature1-image'></video>
+      <video playsInline muted autoPlay={true} loop alt=' Onboarding guiado que ensina enquanto faz' src='/feature1.mp4' className='Feature1-image'></video>
 
 
 

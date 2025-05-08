@@ -9,6 +9,14 @@ import { IconLifebuoyFilled } from '@tabler/icons-react';
 function Feature2() {
 
 
+  
+  useEffect(() => {
+    const video = document.querySelector('.Feature1-image');
+    if (video) {
+      video.play().catch((e) => console.log('Erro ao iniciar vídeo:', e));
+    }
+  }, []);
+
 
   
     const [isMobile, setIsMobile] = useState(false)
@@ -29,7 +37,7 @@ function Feature2() {
   return (
     <div style={!!isMobile ? {flexDirection: 'column-reverse'   } : null} className='Feature1-container'>
 
-      <video autoPlay loop loading='lazy' alt='Suporte proativo com guias dinâmicos inteligentes' src='/feature2.mp4' className='Feature1-image'></video>
+      <video autoPlay muted loop  alt='Suporte proativo com guias dinâmicos inteligentes' src='/feature2.mp4' className='Feature1-image'></video>
       
       <div className='Feature1-text-container'>
 
