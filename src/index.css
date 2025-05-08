@@ -74,6 +74,7 @@
 :root {
   background-color: #F6F5F3;
   overflow-x: hidden;
+  
 }
 
 /* Aplica o fundo geral */
@@ -82,7 +83,9 @@ body {
   padding: 0;
   display: flex;
   justify-content: center; /* centraliza horizontalmente */
+  align-items: start;
   overflow-x: hidden;
+
 }
 
 /* Container que limita a largura do conteúdo */

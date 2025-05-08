@@ -514,7 +514,8 @@ function Hero() {
             width: '100%',
             overflow: 'hidden',
             mixBlendMode: 'lighten',
-            scale: '1.2',
+            scale: '1.6',
+            opacity:'0.8',
             zIndex: '-1'
           }}
           src="noiseParticles.svg"
