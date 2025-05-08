@@ -29,7 +29,7 @@ function Feature2() {
   return (
     <div style={!!isMobile ? {flexDirection: 'column-reverse'   } : null} className='Feature1-container'>
 
-      <img loading='lazy' alt='Suporte proativo com guias dinâmicos inteligentes' src='/feature2.jpg' className='Feature1-image'></img>
+      <video autoPlay loop loading='lazy' alt='Suporte proativo com guias dinâmicos inteligentes' src='/feature2.mp4' className='Feature1-image'></video>
       
       <div className='Feature1-text-container'>
 

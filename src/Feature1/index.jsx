@@ -59,7 +59,7 @@ function Feature1() {
 
 
 
-      <img loading='lazy' alt=' Onboarding guiado que ensina enquanto faz' src='/feature1.jpg' className='Feature1-image'></img>
+      <video loading='lazy' autoPlay loop alt=' Onboarding guiado que ensina enquanto faz' src='/feature1.mp4' className='Feature1-image'></video>
 
 
 
