@@ -41,7 +41,7 @@
 //         Ofereça uma experiência guiada e acolhedora, com suporte proativo que faz o usuário se sentir acompanhado por um especialista.
 //       </h2>
 
-      
+
 //     <img alt='Noise Gradient' loading='lazy' style={{ 
 //   position: 'absolute', 
 //   top:'12%',
@@ -164,19 +164,19 @@
 
 
 
-        
+
 //       </div>
 
 
 
 
-      
+
 //     </div>
 
 
 
-    
-   
+
+
 
 
 
@@ -484,7 +484,7 @@ function Hero() {
               transition={{ duration: 0.6 }}
               style={{ fontSize: '18px', color: '#333' }}
             >
-              
+
             </motion.p>
           </motion.div>
         )}
@@ -515,14 +515,14 @@ function Hero() {
             overflow: 'hidden',
             mixBlendMode: 'lighten',
             scale: '1.6',
-            opacity:'0.8',
+            opacity: '0.8',
             zIndex: '-1'
           }}
           src="noiseParticles.svg"
         />
 
-        <div 
-        className='hero-gradient-mask'
+        <div
+          className='hero-gradient-mask'
           style={{
             position: 'absolute',
             // top: '16%',
@@ -533,7 +533,7 @@ function Hero() {
             scale: '1.6',
             zIndex: '-2',
             opacity: '0.8',
-           
+
           }}
         >
           <video
@@ -550,7 +550,7 @@ function Hero() {
         </div>
 
         <ButtonComponent FullWidth={true} Color={'black-button'} Text={'Garanta seu acesso'} />
-        
+
 
         <div
           className="hero-videos-body"
@@ -619,7 +619,7 @@ function Hero() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-            
+
             />
           </AnimatePresence>
         </div>

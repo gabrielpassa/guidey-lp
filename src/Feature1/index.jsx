@@ -15,40 +15,40 @@ function Feature1() {
       video.play().catch((e) => console.log('Erro ao iniciar vídeo:', e));
     }
   }, []);
-  
-  
- 
+
+
+
 
   return (
     <div className='Feature1-container'>
-      
+
       <div className='Feature1-text-container'>
 
-        
-        
+
+
 
 
         <div className='Feature1-subtitle-body'>
-  <div className='Feature1-subtitle-icon-mask'>
-    <video
-      className='gradient-video'
-      src='/gradient.mp4'
-      autoPlay
-      loading='lazy'
-      loop
-      muted
-      playsInline
-    />
-    <div className='Feature1-subtitle-icon-body'>
-      <IconPointerFilled className='Feature1-subtitle-icon'  />
-    </div>
-    
-  </div>
+          <div className='Feature1-subtitle-icon-mask'>
+            <video
+              className='gradient-video'
+              src='/gradient.mp4'
+              autoPlay
+              loading='lazy'
+              loop
+              muted
+              playsInline
+            />
+            <div className='Feature1-subtitle-icon-body'>
+              <IconPointerFilled className='Feature1-subtitle-icon' />
+            </div>
 
-  <img  className='Feature1-icon-noise' src='/iconNoise.png'></img>
+          </div>
 
-  <p>Guias Interativos</p>
-</div>
+          <img className='Feature1-icon-noise' src='/iconNoise.png'></img>
+
+          <p>Guias Interativos</p>
+        </div>
 
 
 
@@ -75,7 +75,7 @@ function Feature1() {
 
 
 
-     
+
 
 
 

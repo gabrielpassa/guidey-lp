@@ -8,12 +8,12 @@ import './index.css'
 
 function BentoGrid() {
 
-  
- 
+
+
 
   return (
     <div className='BentoGrid-container'>
-      
+
       <div className='BentoGrid-row'>
 
         <div className='BentoGrid-card-1'>
@@ -54,7 +54,7 @@ function BentoGrid() {
           </div>
         </div>
 
-     
+
 
       </div>
 
