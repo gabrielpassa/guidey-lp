@@ -1,35 +1,37 @@
 .ImpactSection-container {
-    display: flex;
-    padding: 76px 0px 28px 0px;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    align-self: stretch;
-} 
-
-
-.ImpactSection-headline {
-    color: #111;
-    text-align: center;
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 48px; /* 126.316% */
-    letter-spacing: -1.52px;
-
-    max-width: 584px;
+  display: flex;
+  padding: 76px 0px 28px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
 }
 
 
-.ImpactSection-subheadline  {
-    color: #6C6C6B;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 150% */
+.ImpactSection-headline {
+  color: #111;
+  text-align: center;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+  /* 126.316% */
+  letter-spacing: -1.52px;
 
-    max-width: 422px;
+  max-width: 584px;
+}
+
+
+.ImpactSection-subheadline {
+  color: #6C6C6B;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+
+  max-width: 422px;
 }
 
 
@@ -38,170 +40,166 @@
 
 
 .ImpactSection-frases-row-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.ImpactSection-frases-collum-container {
+  display: flex;
+  gap: 16px;
+  animation: scrollLoop 20s linear infinite;
+  white-space: nowrap;
+}
+
+.ImpactSection-frases-collum-container.reverse {
+  animation-direction: reverse;
+  animation-duration: 30s;
+  /* velocidade diferente */
+}
+
+.ImpactSection-frases-body {
+  display: flex;
+  width: auto;
+  padding: 16px 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border-radius: 12px;
+  border: 1px solid #E3E2E0;
+  background: #FFF;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+.ImpactSection-frases-shadow-left {
+  width: 168px;
+  display: flex;
+  flex: 1;
+
+  background: linear-gradient(to right,
+      #F6F5F3 0px,
+      #F6F5F3 112px,
+      transparent 168px);
+  left: 0px;
+  z-index: 2;
+  position: absolute;
+  height: 100%;
+}
+
+
+
+
+
+.ImpactSection-frases-shadow-right {
+  width: 168px;
+  display: flex;
+  flex: 1;
+
+  background: linear-gradient(to left,
+      #F6F5F3 0px,
+      #F6F5F3 112px,
+      transparent 168px);
+
+
+
+
+  right: 0px;
+  z-index: 2;
+  position: absolute;
+  height: 100%;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+
+  .ImpactSection-container {
     display: flex;
+    padding: 76px 24px 28px 24px;
     flex-direction: column;
-    gap: 16px;
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-  }
-  
-  .ImpactSection-frases-collum-container {
-    display: flex;
-    gap: 16px;
-    animation: scrollLoop 20s linear infinite;
-    white-space: nowrap;
-  }
-  
-  .ImpactSection-frases-collum-container.reverse {
-    animation-direction: reverse;
-    animation-duration: 30s; /* velocidade diferente */
-  }
-  
-  .ImpactSection-frases-body {
-    display: flex;
-    width: auto;
-    padding: 16px 32px;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 2px;
-    border-radius: 12px;
-    border: 1px solid #E3E2E0;
-    background: #FFF;
-    color: #000;
-    font-size: 16px;
+    gap: 32px;
+    align-self: stretch;
+  }
+
+
+  .ImpactSection-headline {
+    color: #111;
+    text-align: center;
+    font-size: 28px;
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    flex: 0 0 auto;
-    white-space: nowrap;
-  }
-  
-  @keyframes scrollLoop {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-  
-
-
-  .ImpactSection-frases-shadow-left {
-    width: 168px;
-    display: flex;
-    flex: 1;
-  
-    background: linear-gradient(
-  to right,
-  #F6F5F3 0px,
-  #F6F5F3 112px,
-  transparent 168px
-);
-    left: 0px;
-    z-index: 2;
-    position: absolute;
-    height: 100%;
+    font-weight: 500;
+    line-height: 38px;
+    /* 135.714% */
+    letter-spacing: -1.12px;
   }
 
 
-
-
-  
-  .ImpactSection-frases-shadow-right {
-    width: 168px;
-    display: flex;
-    flex: 1;
-  
-    background: linear-gradient(
-  to left,
-  #F6F5F3 0px,
-  #F6F5F3 112px,
-  transparent 168px
-);
-
-
-
-
-    right: 0px;
-    z-index: 2;
-    position: absolute;
-    height: 100%;
-  }
-
-
-
-
-
-  @media (max-width: 1024px) {
-
-    .ImpactSection-container {
-      display: flex;
-      padding: 76px 24px 28px 24px;
-      flex-direction: column;
-      align-items: center;
-      gap: 32px;
-      align-self: stretch;
-    }
-
-
-    .ImpactSection-headline {
-      color: #111;
-      text-align: center;
-      font-size: 28px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 38px; /* 135.714% */
-      letter-spacing: -1.12px;
-  }
-  
-  
-  .ImpactSection-subheadline  {
+  .ImpactSection-subheadline {
     color: #6C6C6B;
     text-align: center;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
+    /* 150% */
   }
 
 
   .ImpactSection-frases-body {
-      font-size: 14px;
+    font-size: 14px;
   }
 
-  
+
   .ImpactSection-frases-shadow-left {
     width: 48px;
     display: flex;
     flex: 1;
-  
-    background: linear-gradient(
-      to right,
-      #F6F5F3 0px,
-      #F6F5F3 16px,
-      transparent 48px
-    );
+
+    background: linear-gradient(to right,
+        #F6F5F3 0px,
+        #F6F5F3 16px,
+        transparent 48px);
 
   }
 
 
 
 
-  
+
   .ImpactSection-frases-shadow-right {
     width: 48px;
     display: flex;
     flex: 1;
-  
-    background: linear-gradient(
-      to left,
-      #F6F5F3 0px,
-      #F6F5F3 16px,
-      transparent 48px
-    );
+
+    background: linear-gradient(to left,
+        #F6F5F3 0px,
+        #F6F5F3 16px,
+        transparent 48px);
 
 
   }
@@ -209,4 +207,4 @@
 
 
 
-  }
+}
